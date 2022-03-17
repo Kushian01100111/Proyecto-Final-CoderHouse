@@ -1,7 +1,7 @@
 
 /* Estilos Globales */
 
-* {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,29 +35,34 @@ input{
 
 header{
     width: 100%;
-    position: fixed;
     height: 80px;
     background-color: #4365F2;
 }
 
 nav{
-    max-width: 1000px;
+    display: flex;
+    max-width: 1024px;
     margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logoEmpresa{
-    position: relative;
     margin-top: 15px;
     display: inline-block;
-    
+    width: 259px;
 }
 
+.nav-toggle{
+    display: none;
+}
+
+
+
+
 nav ul{
-    position: relative;
+    margin-top: 15px;
     display: inline-block;  
-    top: -20px;
-    right: -210px;  
-    z-index: 1;
 }
 
 nav ul li{
@@ -68,8 +73,86 @@ nav ul li{
 
 .linksNavegacion{
     font-weight: 700;
-    z-index: 1;
 }
+
+@media (min-width: 800px) and (max-width: 1000px){
+    nav{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 428px){
+    header{
+        padding-bottom: 10px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{
+        transform: scale(0,0);
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        align-items: center;
+        background: #4365F2;
+        width: 100%;
+    }
+
+    .nav-toggle-label{
+        position: absolute;
+        top: 3px;
+        right: 0;
+        margin-right: 18px;
+        height: 79px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after{
+        display: block;
+        background-color: white;
+        height: 5px;
+        width: 48px;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after{
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before{
+        bottom: 10px;
+    }
+
+    .nav-toggle-label span::after{
+        top: 10px;
+    }
+
+    .nav-toggle:checked ~ header nav img + ul{
+        display: flex;
+        transform: scale(1,1);
+        transition: transform 400ms ease-in-out;
+        transform-origin: top;
+    }
+
+    .nav-toggle:checked ~ header nav img + ul li a{
+        opacity: 1;
+    }
+    .nav-toggle:checked ~ header {
+        height: auto;
+    } 
+    
+    .logoEmpresa{
+        width: 246px;
+    }
+}
+
 
 /* Contenido Principal */
 
@@ -82,40 +165,53 @@ nav ul li{
     background-size: cover;
 }
 
+@media (max-width: 428px){
+    #backgroundPrincipal{
+        display: none;
+    }
+}
+
 main{
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 0 auto;
     background-color: #4365F2;
     padding: 40px;
 }
 
+/* Primera Sección */
 .primeraSection{
     height: auto;
 }
-
 .primeraSection h1{
     text-align: center;
     font-style: italic;
+    font-weight: 700;
     font-size: 3.6rem;
     padding-bottom: 20px;
 }
-.primeraSection p{
+
+.containerPrimera{
+    align-items:center ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerPrimera p{
     font-size: 1.8rem;
     white-space: pre-line;
     word-break: normal;
     word-wrap: normal;
 }
 
-.primeraSection p, .primeraSection .imageContainer{
-    margin: 0;
-}
-
 .imageContainer img{
-    top: 10px;
-    width: 100%;
+    width: 417px;
     height: auto;
 }
 
+
+
+
+/* Segunda Sección */
 .segundaSection{
     height: auto;
 }
@@ -126,6 +222,12 @@ main{
     font-size: 3.6rem;
     padding-bottom: 20px;
     padding-top: 50px;
+}
+
+.containerSegunda{
+    align-items:center ;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .segundaSection p {
@@ -140,41 +242,93 @@ main{
     padding: 35px 0;
 }
 
+@media (min-width: 0) and (max-width: 800px){
+    .primeraSection h1, .segundaSection h2{
+        font-size: 3rem;
+    }
+    .containerPrimera, .containerSegunda{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .containerPrimera p , .containerSegunda p{
+        font-size: 1.6rem;
+    }
+}
+
+@media(min-width: 0) and (max-width: 428px){
+   
+    main{
+        padding: 0;
+    }
+    .primeraSection h1, .segundaSection h2{
+        padding: 40px 20px 20px 20px;
+        background-color: #f3f3f3;
+        color: #4365F2;
+    }
+    .segundaSection h2{
+        padding: 50px 20px 20px 20px;
+    }
+    
+    .primeraSection p , .segundaSection p{
+        padding: 40px 40px 0 40px;
+    }
+    .imageContainer{
+        padding: 15px 40px 15px 40px;
+    }
+    .imageContainer img{
+        width: 100%;
+        height: auto;
+    }
+}
+
 footer{
     height: 180px;
     background-color: #4365F2;
 }
 
 footer section{
-    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
-.logoEmpresaFooter{
-    position: relative;
-    top: 75px;
-}
 
 .container, footer span{
     display: inline-block;
 }
 
-footer span{
-    position: relative;
-    top: -15px;
-    right: -360px;
-}
-
-.container{
-    position: relative;
-    top: 75px;
-    right: -250px;
-}
 
 .redesSociales{
     margin: 10px 20px;
     width: 55px;
     height: 53px;
+}
+
+@media (min-width: 0px) and (max-width: 640px){
+    footer {
+        height: auto;
+        background-color: #f3f3f3;
+    }
+    footer section{
+        flex-direction: column;
+        gap: 20px;
+        color: #4365F2;
+    }
+    footer section .filtro{
+        filter: invert(43%) sepia(48%) saturate(7321%) hue-rotate(211deg) brightness(99%) contrast(92%);
+    }
+    .container{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container div + div{
+        padding-bottom: 50px
+    }
 }
 
 
