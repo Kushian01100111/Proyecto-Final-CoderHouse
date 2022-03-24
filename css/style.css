@@ -84,6 +84,21 @@ nav ul li{
     font-family: 'source sans pro','noto sans';
 }
 
+nav ul li:hover{
+   background-color: var(--blanco);
+   color:var(--azul);
+   border-radius: 25px;
+   transition: all 0.5s ease-in-out; 
+   padding: 10px 5px;
+   margin: 0 10px;
+}
+
+.linksNavegacion:hover{
+    color: var(--azul);
+}
+
+
+
 @media (min-width: 800px) and (max-width: 1000px){
     nav{
         justify-content: space-around;
@@ -631,6 +646,12 @@ footer section{
     padding: 10px 15px 10px 15px;
     color: var(--azul);
     margin-left: 40px;
+}
+
+#submit:hover{
+    background-color: #4F5FA7;
+    color: var(--blanco);
+    transition: all 0.5s ease-in-out;
 }
 
 .primero{
