@@ -1,0 +1,27 @@
+//* Estilos globales*//
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'noto sans', 'source sans pro', sans-serif;
+    color: $verde;
+    background-color:$verde;
+}
+li{
+    list-style: none;
+}
+a{
+    color: $blanco;
+    text-decoration: none;
+}
+input{
+    color: $blanco;
+    font-family: inherit;
+    border: $blanco;
+}

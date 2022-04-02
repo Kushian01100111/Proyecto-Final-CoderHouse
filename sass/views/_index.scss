@@ -1,0 +1,68 @@
+//*     INDEX     *///
+
+.primeraSection{
+    height: auto;
+    .containerPrimera{
+        align-items:center ;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .imageContainer img{
+        width: 417px;
+        height: auto;
+    }
+}
+.segundaSection{
+    height: auto;
+    .containerSegunda{
+        align-items:center ;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .segundaSection .imageContainer{
+        padding: 35px 0;
+    }
+    .imageContainer img{
+        width: 417px;
+        height: auto;
+    }
+}
+
+//*    MEDIA QUERIES   *///
+@media (max-width: 800px){
+    .primeraSection h1, .segundaSection h2{
+        font-size: 3rem;
+    }
+    .containerPrimera, .containerSegunda{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .containerPrimera p , .containerSegunda p{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 428px){
+    .primeraSection h1, .segundaSection h2{
+        padding: 40px 20px 20px 20px;
+        background-color: $verde;
+        color: $blanco;
+    }
+    .segundaSection h2{
+        padding: 50px 20px 20px 20px;
+    }
+    .primeraSection p , .segundaSection p{
+        padding: 40px 40px 0 40px;
+    }
+    .primeraSection .imageContainer{
+        padding: 15px 40px 15px 40px;
+    }
+    .primeraSection .imageContainer img, .segundaSection .imageContainer img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #backgroundPrincipalPrecios{
+        display: none;
+    }
+}
