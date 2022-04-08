@@ -1,33 +1,30 @@
 
 /* Estilos Globales */
-
+/* 
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-}
+} */
 
-:root{
-    --base:rgb(20,10,228);
-    --linear:linear-gradient(90deg, rgba(20,10,228,1) 0%, rgba(66,81,237,1) 14%, rgba(67,101,242,1) 83%, rgba(22,22,226,1) 100%);
+/* :root{
     --blanco:#f3f3f3;
     --azul:#003E3A;
-    --azulSecundario:#00ADA2;
     --azulTerceario: #12615C;
-}
+} */
 
 
 
-html{
+/* html{
     font-size: 62.5%;
 }
 
 body{
     font-size: 1.6rem;
     font-family: 'noto sans', 'source sans pro', sans-serif;
-    color: var(--azul);
-    background-color:var(--azul);
+    color: $verde;
+    background-color:$verde;
 }
 
 li{
@@ -35,26 +32,26 @@ li{
 }
 
 a{
-    color: var(--blanco);
+    color: $blanco;
     text-decoration: none;
 }
 
 input{
-    color: var(--blanco);
+    color: $blanco;
     font-family: inherit;
-    border: var(--blanco);
-}
+    border: $blanco;
+} */
 
 /* inicio pagina */
 
-header{
+/* header{
     width: 100%;
     height: 80px;
-    background: var(--azul);
+    background: $verde;
     /* position: fixed; */
 }
 
-nav{
+/* nav{
     display: flex;
     max-width: 1024px;
     margin: 0 auto;
@@ -89,24 +86,16 @@ nav ul li{
 }
 
 .linksNavegacion:hover{
-    border-bottom: 2px solid var(--blanco);
+    border-bottom: 2px solid $blanco;
     transition: all 0.1s ease-in-out;
     padding: 0px 0px 1px 0px; 
-    color: var(--blanco);
-}
+    color: $blanco;
+} */ 
 
 /* Contenido Principal */
 
-#backgroundPrincipal{
-    width: 100%;
-    height: 500px;
-    background-image: url(../image/Diseño-Web.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#backgroundPrincipalPrecios{
+integrantes
+/* #backgroundPrincipalPrecios{
     width: 100%;
     height: 400px;
     background-image: url(../image/Diseño-Web.jpg);
@@ -118,7 +107,7 @@ nav ul li{
 main{
     max-width: 1024px;
     margin: 0 auto;
-    background: var(--blanco);
+    background: $blanco;
     padding: 40px;
     border-radius: 25px;
     color: black;
@@ -127,10 +116,10 @@ main{
 }
 .main{
     color: #003E3A;
-}
+} */
 
 /* Primera Sección */
-.primeraSection{
+/* .primeraSection{
     height: auto;
 }
 .primeraSection h1{
@@ -160,7 +149,7 @@ main{
 }
 
 /* Segunda Sección */
-.segundaSection{
+/* .segundaSection{
     height: auto;
 }
 
@@ -185,17 +174,16 @@ main{
     word-wrap: normal;
 }
 
-
 .segundaSection .imageContainer{
     padding: 35px 0;
-}
+} */ 
 
 /* Footer */
 
-footer{
+/* footer{
     height: auto;
-    background: var(--blanco);
-    color: var(--azul);
+    background: $blanco;
+    color: $verde;
 }
 
 footer section{
@@ -213,21 +201,21 @@ footer section{
     align-self: center;
 }
 
-.redesSociales{
+/* .redesSociales{
     margin: 10px 13px;
     width: 55px;
     height: 53px;
-}
+} */
 
-footer section .filtro{
+/* footer section .filtro{
     filter: brightness(0) saturate(100%) invert(18%) sepia(59%) saturate(802%) hue-rotate(130deg) brightness(92%) contrast(103%);
-}
+} */ 
 
 /* final index.html */
 
 /* Comienzo Precios */
 
-#backgroundPrincipalPrecios{
+/* #backgroundPrincipalPrecios{
     width: 100%;
     height: 400px;
     background-image: url(../image/Diseño-Web.jpg);
@@ -250,11 +238,11 @@ footer section .filtro{
     white-space: pre-line;
     word-break: normal;
     word-wrap: normal;
-}
+} */
 
 /* grid precios.html */
 
-.gridPreciosContainer{
+/* .gridPreciosContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,10 +256,10 @@ footer section .filtro{
 }
 
 .bordes{
-    color: var(--azul);
-    border: 2px solid var(--azul);
+    color: $verde;
+    border: 2px solid $verde;
     font-weight: 700;
-    background-color: var(--blanco);
+    background-color: $blanco;
 }
 
 .head{
@@ -329,7 +317,7 @@ footer section .filtro{
     display: flex;
     justify-content: center;
     align-items: center;   
-}
+} */
 
 /* fin grid precios.html */
 
@@ -337,14 +325,14 @@ footer section .filtro{
 
 /* Comienzo integrantes */
 
-.integranteSection h1 p{
+/* .integranteSection h1 p{
     font-size: 1.8rem;
     white-space: pre-line;
     word-break: normal;
     word-wrap: normal;
-}
+} */
 
-.gridContainer{
+/* .gridContainer{
     margin: 25px 0 10px 0;
     display: grid;
     width: 100%;
@@ -384,7 +372,7 @@ footer section .filtro{
     justify-content: flex-end;
     grid-column: 1/6;
     grid-row: 4/5;
-}
+} */
 
 
 
@@ -393,7 +381,7 @@ footer section .filtro{
 
 /* Comienzo de Contacto  */
 
-.gridContainerCon{
+/* .gridContainerCon{
     display: grid;
     font-size: 1.8rem;
     align-items: center;
@@ -426,7 +414,7 @@ footer section .filtro{
     border-radius: 5px;
     padding: 5px 5px 0 5px;
     margin-top: 5px;
-    border: var(--blanco);
+    border: $blanco;
     max-width: 100%;
     max-height: 100%;
 }
@@ -435,14 +423,14 @@ footer section .filtro{
     font-weight: 700;
     width: unset;
     padding: 10px 15px 10px 15px;
-    color: var(--azul);
+    color: $verde;
     margin-left: 40px;
-    border:2px solid var(--azulTerceario);
+    border:2px solid $verdeSegundario;
 }
 
 #submit:hover{
-    background-color: var(--azulTerceario);
-    color: var(--blanco);
+    background-color: $verdeSegundario;
+    color: $blanco;
     transition: all 0.5s ease-in-out;
 }
 
@@ -475,7 +463,7 @@ footer section .filtro{
     justify-items: center;
     grid-column: 3/4;
     grid-row: 4/5;
-}
+} */
 
 
 
@@ -483,7 +471,7 @@ footer section .filtro{
 
 /* Comienzo testimonios */
 
-.testimonioSection{
+/* .testimonioSection{
     font-size: 1.8rem;
 }
 
@@ -504,16 +492,16 @@ footer section .filtro{
     font-size: 2rem;
     font-weight: 700;
     font-family: 'source sans pro', 'noto sans';
-}
+} */
 
-.sunshine p{
+/* .sunshine p{
     font-size: 1.8rem;
     white-space: pre-line;
     word-break: normal;
     word-wrap: normal;
-}
+} */
 
-.dueña{
+/* .dueña{
     width: 213px;
     border-radius: 50%;
     box-shadow: 3px 5px 5px 0px;
@@ -576,12 +564,12 @@ footer section .filtro{
 .ter7{
     grid-column: 3/4;
     grid-row: 1/3;
-}
+} */
 
 
 /****** TODOS LOS ELEMENTOS DE MEDIA QUERIES *****/
 
-@media (min-width: 800px) and (max-width: 1000px){
+/* @media (min-width: 800px) and (max-width: 1000px){
     nav{
         justify-content: space-around;
     }
@@ -601,7 +589,7 @@ footer section .filtro{
         gap: 10px;
         margin: 0;
         align-items: center;
-        background: var(--azul);
+        background: $verde;
         width: 100%;
     }
 
@@ -658,10 +646,10 @@ footer section .filtro{
         margin-right: 40px;
         width: 246px;
     }
-}
+} */
 
 
-@media (max-width: 800px){
+/* @media (max-width: 800px){
     .primeraSection h1, .segundaSection h2{
         font-size: 3rem;
     }
@@ -672,23 +660,23 @@ footer section .filtro{
     .containerPrimera p , .containerSegunda p{
         font-size: 1.6rem;
     }
-}
+} */
 
-@media (max-width: 428px){
-    #backgroundPrincipal{
+/* @media (max-width: 428px){ */
+    /* #backgroundPrincipal{
         display: none;
-    }
-    main{
+    } */
+    /* main{
         padding: 0;
     }
     .hS{
-        color: var(--azul);
+        color: $verde;
         box-shadow: -1px 2px 9px 0px;
     }
     .primeraSection h1, .segundaSection h2{
         padding: 40px 20px 20px 20px;
-        background-color: var(--azul);
-        color: var(--blanco);
+        background-color: $verde;
+        color: $blanco;
     }
     .segundaSection h2{
         padding: 50px 20px 20px 20px;
@@ -705,17 +693,17 @@ footer section .filtro{
         width: 100%;
         height: auto;
     }
-}
+} */
 
-@media (max-width: 640px){
+/* @media (max-width: 640px){
     footer {
         height: auto;
-        background: var(--azul);
+        background: $verde;
     }
     footer section{
         flex-direction: column;
         gap: 20px;
-        color: var(--blanco);
+        color: $blanco;
     }
     footer section .filtro{
         filter: unset;
@@ -729,28 +717,28 @@ footer section .filtro{
     .container div + div{
         padding-bottom: 50px
     }
-}
-
-@media (max-width: 428px){
+} */
+/* 
+@media (max-width: 428px){ */
    
-    #backgroundPrincipalPrecios{
+    /* #backgroundPrincipalPrecios{
         display: none;
     }
     main{
         padding: 0;
-    }
-    .preciosSection h1, h1{
-        padding: 40px 20px 20px 20px;
-        background-color: var(--azul);
+    } */
+    /* .preciosSection h1, h1{ */
+        /* padding: 40px 20px 20px 20px;
+        background-color: $verde;
         font-size: 3rem;
-        color: var(--blanco);
+        color: $blanco; */
     }
-    .preciosSection p {
+    /* .preciosSection p {
         padding: 40px 40px 0 40px;
-    }
+    } */
 }
 
-@media (max-width: 510px){
+/* @media (max-width: 510px){
     .gridPreciosContainer{
         padding-bottom: 40px;
     }
@@ -767,10 +755,10 @@ footer section .filtro{
         grid-template-columns:147px 147px ;
         grid-template-rows: 52px 52px 52px 52px;
     }
-}
+} */
 
 
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     .gridContainer{
         display: flex;
         flex-direction: column;
@@ -799,10 +787,10 @@ footer section .filtro{
     .integranteSocials{
         flex-wrap: wrap;
     }
-}
+} */
 
 
-@media (max-width:750px){
+/* @media (max-width:750px){
     .gridContainerCon{
         display: flex;
         flex-direction: column;
@@ -842,10 +830,10 @@ footer section .filtro{
         margin-bottom:10px ;
         text-align: center;
     }
-}
+} */
 
 
-@media (max-width: 520px){
+/* @media (max-width: 520px){
     .gridContainerTes{
         display: flex;
         flex-direction: column;
@@ -857,4 +845,4 @@ footer section .filtro{
         padding: 30px;
         gap: 25px;
     }
-}
+} */

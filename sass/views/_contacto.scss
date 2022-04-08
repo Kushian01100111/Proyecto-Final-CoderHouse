@@ -1,0 +1,118 @@
+//*     CONTACTO    *///
+
+.gridContainerCon{
+    display: grid;
+    font-size: 1.8rem;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 5% 2fr 1fr 2fr 5%;
+    grid-template-rows: 120px 120px 280px 70px;
+    & label{
+        font-family: 'source sans pro','noto sans';;
+        font-weight: 700;
+        display: block;
+        padding-left: 5px;
+    }
+    & input{
+        width: 100%;
+        font-family: 'source sans pro','noto sans';
+        font-size: 1.8rem;
+        border-radius: 5px;
+        margin-top: 10px;
+        color: black;
+        padding: 5px 0 5px 5px;
+    }
+    & textarea{
+        width: 100%;
+        font-family: 'source sans pro','noto sans';
+        font-size: 1.8rem;
+        border-radius: 5px;
+        padding: 5px 5px 0 5px;
+        margin-top: 5px;
+        border: $blanco;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .primero{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .segundo{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    
+    .tercero{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .cuarto{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    
+    .quinto{
+        grid-column: 2/5;
+        grid-row: 3/4;
+    }
+    .sexto{
+        justify-items: center;
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    #submit{
+        font-weight: 700;
+        width: unset;
+        padding: 10px 15px 10px 15px;
+        color: $verde;
+        margin-left: 40px;
+        border:2px solid $verdeSegundario;
+    }
+    #submit:hover{
+        background-color: $verdeSegundario;
+        color: $blanco;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
+//*   MEDIA QUERIES   *///
+
+@media (max-width:750px){
+    .gridContainerCon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        .primero{
+            width: 100%;
+            margin-bottom:10px ;
+        }
+        .segundo{
+            width: 100%;
+            margin-bottom:10px ;
+        }
+        .tercero{
+            width: 100%;
+            margin-bottom:10px ;
+        }
+        .cuarto{
+            width: 100%;
+            margin-bottom:10px ;
+        }
+        .quinto{
+            width: 100%;
+            margin-bottom:10px ;
+        }
+        .sexto{
+            width: 100%;
+            margin-bottom:10px ;
+            text-align: center;
+        }
+        #submit{
+            margin: 0;
+        }
+    }
+}
