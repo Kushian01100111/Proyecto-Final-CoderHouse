@@ -2,7 +2,7 @@
 
 .gridContainerCon{
     display: grid;
-    font-size: 1.8rem;
+    font-size: map-get($font-size, mediana);
     align-items: center;
     width: 100%;
     grid-template-columns: 5% 2fr 1fr 2fr 5%;
@@ -16,7 +16,7 @@
     & input{
         width: 100%;
         font-family: 'source sans pro','noto sans';
-        font-size: 1.8rem;
+        font-size: map-get($font-size, mediana);
         border-radius: 5px;
         margin-top: 10px;
         color: black;
@@ -25,7 +25,7 @@
     & textarea{
         width: 100%;
         font-family: 'source sans pro','noto sans';
-        font-size: 1.8rem;
+        font-size: map-get($font-size, mediana);
         border-radius: 5px;
         padding: 5px 5px 0 5px;
         margin-top: 5px;

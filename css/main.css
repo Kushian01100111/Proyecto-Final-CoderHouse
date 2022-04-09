@@ -186,11 +186,16 @@ main {
   .hS {
     color: #003E3A;
     box-shadow: -1px 2px 9px 0px; }
-  section h1 {
+  section h1, section main h2, main section h2 {
     padding: 40px 20px 20px 20px;
     background-color: #003E3A;
     font-size: 3rem;
     color: #f3f3f3; }
+  main section h2 {
+    padding: unset;
+    padding: unset;
+    background-color: unset;
+    color: #003E3A; }
   p {
     padding: 20px 40px 0 40px; } }
 
@@ -217,7 +222,7 @@ main {
     height: auto; }
 
 @media (max-width: 800px) {
-  .primeraSection h1, .segundaSection h2 {
+  .primeraSection h1, .primeraSection main h2, main .primeraSection h2, .segundaSection h2 {
     font-size: 3rem; }
   .containerPrimera, .containerSegunda {
     flex-direction: column;
@@ -226,7 +231,7 @@ main {
     font-size: 1.6rem; } }
 
 @media (max-width: 428px) {
-  .primeraSection h1, .segundaSection h2 {
+  .primeraSection h1, .primeraSection main h2, main .primeraSection h2, .segundaSection h2 {
     padding: 40px 20px 20px 20px;
     background-color: #003E3A;
     color: #f3f3f3; }
@@ -324,7 +329,7 @@ main {
     grid-row: 1/4;
     grid-column: 1/2;
     width: 191px;
-    height: 185px;
+    height: auto;
     border-radius: 50%;
     box-shadow: 3px 5px 5px 0px; }
   .integrantesSection .gridContainer .integranteInfo {
@@ -350,7 +355,7 @@ main {
     .integrantesSection .gridContainer .integranteSocials .redesSociales {
       margin: 10px 13px;
       width: 55px;
-      height: 53px; }
+      height: 55px; }
 
 @media (max-width: 900px) {
   .integrantesSection .gridContainer {
@@ -475,6 +480,7 @@ main {
     .testimonioSection .sunshine .dueña {
       width: 213px;
       border-radius: 50%;
+      height: auto;
       box-shadow: 3px 5px 5px 0px; }
     .testimonioSection .sunshine span {
       font-size: 2rem;

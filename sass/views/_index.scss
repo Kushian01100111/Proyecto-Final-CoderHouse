@@ -31,14 +31,14 @@
 //*    MEDIA QUERIES   *///
 @media (max-width: 800px){
     .primeraSection h1, .segundaSection h2{
-        font-size: 3rem;
+        font-size: map-get($font-size, cuasi-grande);
     }
     .containerPrimera, .containerSegunda{
         flex-direction: column;
         gap: 40px;
     }
     .containerPrimera p , .containerSegunda p{
-        font-size: 1.6rem;
+        font-size: map-get($font-size, regular);
     }
 }
 
