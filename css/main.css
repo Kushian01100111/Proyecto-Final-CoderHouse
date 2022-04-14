@@ -215,11 +215,14 @@ main {
     align-items: center;
     display: flex;
     justify-content: space-evenly; }
-  .segundaSection .segundaSection .imageContainer {
-    padding: 35px 0; }
-  .segundaSection .imageContainer img {
-    width: 417px;
-    height: auto; }
+    .segundaSection .containerSegunda p {
+      order: 2; }
+    .segundaSection .containerSegunda .imageContainer {
+      order: 1;
+      padding: 35px 0; }
+    .segundaSection .containerSegunda .imageContainer img {
+      width: 417px;
+      height: auto; }
 
 @media (max-width: 800px) {
   .primeraSection h1, .primeraSection main h2, main .primeraSection h2, .segundaSection h2 {
@@ -228,7 +231,7 @@ main {
     flex-direction: column;
     gap: 40px; }
   .containerPrimera p, .containerSegunda p {
-    font-size: 1.6rem; } }
+    font-size: 1.4rem; } }
 
 @media (max-width: 428px) {
   .primeraSection h1, .primeraSection main h2, main .primeraSection h2, .segundaSection h2 {
@@ -336,14 +339,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     grid-column: 2/6;
     grid-row: 1/4;
     margin-left: 15px; }
   .integrantesSection .gridContainer .integranteInfo h3 {
     font-size: 2.5rem; }
   .integrantesSection .gridContainer .integranteInfo p {
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
   .integrantesSection .gridContainer .integranteInfo span {
     font-size: 2rem;
     font-weight: 700; }
@@ -406,7 +409,7 @@ main {
     margin-top: 5px;
     border: #f3f3f3;
     max-width: 100%;
-    max-height: 100%; }
+    resize: none; }
   .gridContainerCon .primero {
     grid-column: 2/3;
     grid-row: 1/2; }
