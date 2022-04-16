@@ -10,23 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,700&family=Roboto:wght@100;400;700&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Swift solutions-Precios</title>
+    <title>Swift solutions - Precios</title>
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-    </label>
     <header>
-        <nav>
+        <nav class="navBar">
             <img src="../image/svg.svg" alt="imagen-logo" class="logoEmpresa">
-            <ul>
-                <li><a href="../index.html" class="linksNavegacion">HOME</a></li>
-                <li><a href="precios.html" class="linksNavegacion">PRECIOS</a></li>
-                <li><a href="integrantes.html" class="linksNavegacion">INTEGRANTES</a></li>
-                <li><a href="contacto.html" class="linksNavegacion">CONTACTOS</a></li>
-                <li><a href="testimonios.html" class="linksNavegacion">TESTIMONIOS</a></li>
+            <ul class="navMenu">
+                <li class="navItem"><a href="../index.html" class="linksNavegacion">HOME</a></li>
+                <li class="navItem"><a href="precios.html" class="linksNavegacion">PRECIOS</a></li>
+                <li class="navItem"><a href="integrantes.html" class="linksNavegacion">INTEGRANTES</a></li>
+                <li class="navItem"><a href="contacto.html" class="linksNavegacion">CONTACTOS</a></li>
+                <li class="navItem"><a href="testimonios.html" class="linksNavegacion">TESTIMONIOS</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <section id="backgroundPrincipalPrecios">
@@ -65,9 +66,10 @@
                 <img src="../image/svg.svg" alt="imagen-logo" class="logoEmpresa filtro">
             </div>
             <div>
-                <span> &#169; 2022 Pedro Comas, Todos los derechos reservados.</span>
+                <span> &#169; 2022 Pedro Comas<span class="footerHidden">,Todos los derechos reservados.</span></span>
             </div>
         </section>
     </footer>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

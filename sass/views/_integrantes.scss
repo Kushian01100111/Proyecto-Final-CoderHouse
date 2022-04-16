@@ -24,12 +24,14 @@
             margin-left: 15px;
         }
         .integranteInfo h3{
+            font-family: 'source sans pro', 'noto sans';
             font-size: map-get($font-size, grande);
         }
         .integranteInfo p{
             font-size: map-get($font-size, regular);
         }
         .integranteInfo span{
+            font-style: italic;
             font-size: 2rem;
             font-weight: 700;
         }

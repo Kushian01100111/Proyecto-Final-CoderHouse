@@ -13,24 +13,24 @@
     <title>Swift solutions</title>
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-    </label>
     <header>
-        <nav>
+        <nav class="navBar">
             <img src="image/svg.svg" alt="imagen-logo" class="logoEmpresa">
-            <ul>
-                <li><a href="index.html" class="linksNavegacion">HOME</a></li>
-                <li><a href="views/precios.html" class="linksNavegacion">PRECIOS</a></li>
-                <li><a href="views/integrantes.html" class="linksNavegacion">INTEGRANTES</a></li>
-                <li><a href="views/contacto.html" class="linksNavegacion">CONTACTOS</a></li>
-                <li><a href="views/testimonios.html" class="linksNavegacion">TESTIMONIOS</a></li>
+            <ul class="navMenu">
+                <li class="navItem"><a href="index.html" class="linksNavegacion">HOME</a></li>
+                <li class="navItem"><a href="views/precios.html" class="linksNavegacion">PRECIOS</a></li>
+                <li class="navItem"><a href="views/integrantes.html" class="linksNavegacion">INTEGRANTES</a></li>
+                <li class="navItem"><a href="views/contacto.html" class="linksNavegacion">CONTACTOS</a></li>
+                <li class="navItem"><a href="views/testimonios.html" class="linksNavegacion">TESTIMONIOS</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <section id="backgroundPrincipalPrecios">
-        <!-- esta section contiene el background principal que se puede observar en figma, se aplicara al proyecto con css en el futuro -->
     </section>
     <main>
         <section class="main">
@@ -72,9 +72,10 @@
                 <img src="image/svg.svg" alt="imagen-logo" class="logoEmpresa filtro">
             </div>
             <div>
-                <span> &#169; 2022 Pedro Comas,Todos los derechos reservados.</span>
+                <span> &#169; 2022 Pedro Comas<span class="footerHidden">,Todos los derechos reservados.</span></span>
             </div>
         </section>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
