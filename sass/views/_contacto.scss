@@ -1,4 +1,11 @@
 //*     CONTACTO    *///
+.cont-inteMain{
+    margin-top: 80px;
+    box-shadow: 3px 4px 16px 0px;
+}
+.mainCont-Inte{
+    color: $verde;
+}
 
 .gridContainerCon{
     display: grid;
@@ -81,6 +88,9 @@
 //*   MEDIA QUERIES   *///
 
 @media (max-width:750px){
+    .mainCont-Inte{
+        padding-top: 0;
+    }
     .gridContainerCon{
         display: flex;
         flex-direction: column;
