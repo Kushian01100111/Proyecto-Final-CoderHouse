@@ -110,6 +110,10 @@ header {
         margin-right: 40px;
         width: 246px; } }
 
+@media (max-width: 320px) {
+  header .navBar .logoEmpresa {
+    margin-right: 0; } }
+
 footer {
   height: auto;
   background: #f3f3f3;
@@ -219,6 +223,15 @@ main {
     justify-content: space-evenly; }
     .segundaSection .containerSegunda p {
       order: 2; }
+      .segundaSection .containerSegunda p .diffLink {
+        font-style: italic;
+        font-weight: 700;
+        color: #003E3A;
+        border-bottom: 1px solid #12615C; }
+      .segundaSection .containerSegunda p .diffLink:hover {
+        font-weight: 300;
+        transition: all 0.1s ease-in-out;
+        color: #12615C; }
     .segundaSection .containerSegunda .imageContainer {
       order: 1;
       padding-top: 15px; }
@@ -258,7 +271,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px; }
+  margin-top: 15px; }
   .gridPreciosContainer .gridPrecios {
     display: grid;
     grid-template-columns: 240px 240px;
@@ -389,7 +402,7 @@ main {
   margin-top: 80px;
   box-shadow: 3px 4px 16px 0px; }
 
-.mainCont-Inte {
+.mainContInte {
   color: #003E3A; }
 
 .gridContainerCon {
@@ -504,6 +517,8 @@ main {
       font-size: 2rem;
       font-weight: 700;
       font-family: 'source sans pro', 'noto sans'; }
+    .testimonioSection .sunshine p {
+      font-style: italic; }
     .testimonioSection .sunshine .gridContainerTes {
       display: grid;
       width: 100%;

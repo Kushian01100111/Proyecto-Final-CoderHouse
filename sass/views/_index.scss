@@ -20,6 +20,18 @@
         justify-content: space-evenly;
         p{
             order: 2;
+            .diffLink{
+                font-style: italic;
+                font-weight: 700;
+                color: $verde;
+                border-bottom: 1px solid $verdeSegundario;
+            }
+            .diffLink:hover{
+                font-weight: 300;
+                transition: all 0.1s ease-in-out;
+                color: $verdeSegundario;
+                
+            }
         }
         .imageContainer{
             order: 1;
